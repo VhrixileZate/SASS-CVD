@@ -1,0 +1,102 @@
+/*--------------------Banner--------------------*/
+.banner{
+    &-wrapper{
+        @include flex(column, center);
+        padding: 4rem 2rem;
+        img{
+            width: 35rem;
+            margin-bottom: 4rem;
+        }
+        &-text{
+            @include flex(column, center);
+            h1{
+                font-size: 5rem;
+                text-align: center;
+                color: $clr-primary;
+                font-weight: 800;
+                line-height: 1;
+            }
+            p{
+                text-align: justify;
+                line-height: 1.8;
+                padding: 4rem 0
+            }
+        }
+    }
+
+    @include mediaQuery($break-lg){
+        &-wrapper{
+            @include flex(row-reverse, space-between);
+            padding: 8rem 0;
+            img{
+                width: 70rem;
+                margin-bottom: 0;
+            }
+            &-text{
+                
+                display: unset;
+                max-width: 55rem;  
+                h1{
+                     font-size: 9rem; 
+                     text-align: unset;
+                }
+                
+            }
+        }
+        
+    }
+}
+
+
+/*--------------------Services--------------------*/
+.services-banner{
+    background: $clr-dark;
+    .services-wrapper{
+        padding: 3rem 2rem;
+        .services-items{
+            @include flex(column, center);
+            padding: 5.5rem 0;
+            i{
+                font-size: 6rem;
+                color: $clr-primary;
+                margin-bottom: 2rem;
+            }
+            h4{
+                color: $clr-primary;
+                font-size: 2.5rem;
+                font-weight: 600;
+            }
+            p{
+                color: #ffffff;
+                margin: 2rem 0;
+                text-align: justify;
+                line-height: 1.8;
+            }
+        }
+    }
+
+    @include mediaQuery($break-md){
+        .services-wrapper{
+            padding: 4.5rem 0;
+            @include grid(2, 10rem);
+            .services-items{
+                @include flex(column, center);
+                padding: 4rem 0;
+            }
+        }
+        
+    }
+
+    @include mediaQuery($break-lg){
+        .services-wrapper{
+            padding: 4.5rem 0;
+            @include grid(3, 10rem);
+            .services-items{
+                @include flex(column, center);
+                padding: 4rem 0;
+            }
+        }
+        
+    }
+}
+

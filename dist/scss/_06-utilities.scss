@@ -72,10 +72,10 @@ $text-displays:(
 
 @for $i from 1 through 20{
     .py--#{$i}{
-        padding: $i +rem 0;
+        padding: $i + rem 0;
     }
     .ml--#{$i}{
-        margin-left: $i +rem 0;
+        margin-left: $i + rem 0;
     }
 }
 
@@ -111,3 +111,68 @@ $text-displays:(
     line-height: 1.5;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/*----------REPEATABLE PATTERN-----------*/
+
+.btn{
+    padding: 1.2rem 1.5rem;
+    border-radius: 5rem;
+    display: inline-block;
+    transition: .2s ease;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.bg--yellow{
+    background: #ffa700;
+    color: #ffffff;
+    transition: .2s ease;
+
+}
+
+.bg--yellow2{
+    background: #ffa700;
+    color: #ffffff;
+    transition: .2s ease;
+}
+
+.bg--yellow2:hover{
+    background: #2b2b2b;
+    transform: scale(1.03);
+    font-weight: 600;
+}
+
+.bg--yellow:hover{
+    background: $clr-light;
+    color: $clr-dark;
+    transform: scale(1.03);
+    font-weight: 600;
+}
+
+.for-space{
+    height: 7.5rem;
+    width: 100%;
+    background-color: rgb(255, 0, 43);
+}
+
+
+
+
+
+
+
+
+body{
+    padding-bottom: 50rem;
+}

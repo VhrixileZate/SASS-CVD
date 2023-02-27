@@ -1,0 +1,22 @@
+@mixin grid($col:1, $gap:1rem){
+    display: grid;
+    grid-template-columns: repeat($col,1fr);
+    grid-gap: $gap;
+};
+
+@mixin mediaQuery($width: 48rem){
+    @media screen and (min-width:$width){
+        @content
+    }
+};
+
+@mixin flex($direction, $justify){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+}
+
+
+
+

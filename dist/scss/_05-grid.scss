@@ -1,6 +1,15 @@
-.container {
-    width: 100%;
-    max-width: 140rem;
-    margin: 0 auto;
-    padding: 1.5rem;
+
+
+  /*--------Grid------------*/
+.container{
+  max-width: 140rem;
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:600px) {
+  .container{
+      width: 100%;
   }
+}
